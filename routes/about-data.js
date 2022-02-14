@@ -4,6 +4,15 @@ class Skill {
 		this.array=array;
 	}
 }
+class Project {
+    constructor (thumbnail,url,title,date,description,){
+        this.thumbnail=thumbnail;
+        this.url=url;
+        this.title=title;
+        this.date=date;
+        this.description=description;
+    }
+}
 const frontend=new Skill(
 	'Front-End',
 	['HTML', 'CSS', 'JavaScript','React JS']
@@ -24,15 +33,6 @@ const etc=new Skill(
 	'ETC',
 	['Git', 'NGINX', 'EJS']
 )
-class Project {
-    constructor (thumbnail,url,title,date,description,){
-        this.thumbnail=thumbnail;
-        this.url=url;
-        this.title=title;
-        this.date=date;
-        this.description=description;
-    }
-}
 const tictactoe= new Project(
     '',
     'https://lyukidon.github.io/tictactoe/',
